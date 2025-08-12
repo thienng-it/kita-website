@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events | Harmony & Words</title>
+    <meta name="description" content="Join our vibrant community events, from student showcases and concerts to free workshops.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide-react@latest/dist/lucide-react.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header & Navigation -->
     <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="../index.html" class="text-2xl font-bold text-blue-600">Harmony & Words</a>
-            <div class="hidden md:flex items-center space-x-8">
+            <div class="hidden md:flex items-center space-x-8 main-nav">
                 <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
                 <a href="courses.html" class="text-gray-600 hover:text-blue-600">Courses</a>
-                <a href="events.html" class="text-blue-600 font-semibold">Events</a>
+                <a href="events.html" class="text-blue-600 font-semibold active">Events</a>
                 <a href="fees.html" class="text-gray-600 hover:text-blue-600">Fees</a>
-                <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 shadow">Contact Us</a>
+                <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 shadow nav-button">Contact Us</a>
             </div>
             <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-600 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
         </nav>
@@ -37,7 +36,6 @@
     </header>
 
     <main>
-        <!-- Featured Event Section -->
         <section class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
@@ -65,20 +63,17 @@
             </div>
         </section>
 
-        <!-- Upcoming Events List -->
         <section id="events" class="py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">Upcoming Events</h2>
                 </div>
                 <div class="max-w-4xl mx-auto space-y-8">
-                    <!-- Event Item 1 -->
                     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center gap-6">
                         <div class="bg-red-500 text-white text-center rounded-lg p-4 w-full md:w-32"><p class="text-5xl font-bold">25</p><p class="font-semibold">AUG</p></div>
                         <div class="flex-1 text-center md:text-left"><h3 class="text-xl font-bold text-blue-600">Student Summer Concert</h3><p class="text-gray-600 mt-1">Our talented music students showcase their progress in our annual summer performance.</p></div>
                         <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow">Learn More</a>
                     </div>
-                    <!-- Event Item 2 -->
                     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center gap-6">
                         <div class="bg-purple-500 text-white text-center rounded-lg p-4 w-full md:w-32"><p class="text-5xl font-bold">10</p><p class="font-semibold">SEP</p></div>
                         <div class="flex-1 text-center md:text-left"><h3 class="text-xl font-bold text-blue-600">Free English Workshop: Idioms</h3><p class="text-gray-600 mt-1">A fun and interactive workshop to learn common English idioms and expressions.</p></div>
@@ -88,7 +83,6 @@
             </div>
         </section>
 
-        <!-- Past Events Gallery -->
         <section class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
@@ -117,10 +111,8 @@
         </section>
     </main>
     
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white">
-        <!-- Footer content remains the same -->
-    </footer>
+        </footer>
 
     <script src="../assets/js/main.js"></script>
     <script>

@@ -4,45 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harmony & Words | English & Music Center</title>
+    <meta name="description" content="Unlock your potential in English and music at Harmony & Words. We offer a wide range of courses for all ages and skill levels.">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide-react@latest/dist/lucide-react.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header & Navigation -->
     <header class="header-default sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-2xl font-bold text-blue-600">
                 Harmony & Words
             </a>
-            <div class="hidden md:flex items-center space-x-8">
+            <div class="hidden md:flex items-center space-x-8 main-nav">
                 <a href="pages/about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
                 <a href="pages/courses.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Courses</a>
                 <a href="pages/events.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Events</a>
                 <a href="pages/fees.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Fees</a>
-                <a href="pages/contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow">Contact Us</a>
+                <a href="pages/contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow nav-button">Contact Us</a>
             </div>
-            <!-- Mobile Menu Button -->
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none" aria-label="Open mobile menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <a href="pages/about.html" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
             <a href="pages/courses.html" class="block py-2 text-gray-600 hover:text-blue-600">Courses</a>
@@ -53,7 +46,6 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="relative bg-white">
             <div class="container mx-auto px-6 py-20 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
                 <div class="text-center lg:text-left">
@@ -70,7 +62,7 @@
                     </div>
                 </div>
                 <div class="relative hidden lg:block">
-                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e2e8f0/475569?text=Music+%26+Learning';" class="rounded-2xl shadow-2xl" alt="Person playing guitar">
+                    <img src="assets/images/hero-background.jpg" class="rounded-2xl shadow-2xl" alt="Person playing guitar">
                     <div class="absolute -bottom-8 -left-8 bg-blue-100 p-6 rounded-2xl shadow-lg w-64">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
@@ -86,7 +78,6 @@
             </div>
         </section>
 
-        <!-- Why Choose Us Section -->
         <section class="py-20 fade-in-section">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
@@ -94,7 +85,6 @@
                     <p class="max-w-2xl mx-auto text-gray-600">We offer more than just lessons; we offer a path to confidence and creativity.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Feature 1 -->
                     <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                         <div class="bg-blue-100 text-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                             <i data-lucide="users" class="w-10 h-10"></i>
@@ -102,7 +92,6 @@
                         <h3 class="text-2xl font-bold mb-3">Expert Instructors</h3>
                         <p class="text-gray-600">Learn from passionate, experienced teachers dedicated to your personal growth.</p>
                     </div>
-                    <!-- Feature 2 -->
                     <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                         <div class="bg-green-100 text-green-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                             <i data-lucide="sparkles" class="w-10 h-10"></i>
@@ -110,7 +99,6 @@
                         <h3 class="text-2xl font-bold mb-3">Vibrant Community</h3>
                         <p class="text-gray-600">Join a supportive network of fellow learners, parents, and staff.</p>
                     </div>
-                    <!-- Feature 3 -->
                     <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                         <div class="bg-purple-100 text-purple-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                             <i data-lucide="calendar-check" class="w-10 h-10"></i>
@@ -122,31 +110,28 @@
             </div>
         </section>
 
-        <!-- Testimonials Section -->
         <section class="py-20 bg-blue-50 fade-in-section">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Students Say</h2>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- Testimonial 1 -->
                     <div class="bg-white p-8 rounded-lg shadow-lg">
                         <i data-lucide="quote" class="w-12 h-12 text-blue-200 mb-4"></i>
                         <p class="text-gray-600 mb-6">"The teachers here are incredibly patient and motivating. My daughter's confidence in both English and piano has soared since she joined. We couldn't be happier!"</p>
                         <div class="flex items-center">
-                            <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/48x48/e2e8f0/475569?text=JS';" alt="Jane Smith">
+                            <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://i.pravatar.cc/48?u=jane" alt="Jane Smith">
                             <div>
                                 <p class="font-bold text-gray-900">Jane Smith</p>
                                 <p class="text-sm text-gray-500">Parent</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Testimonial 2 -->
                     <div class="bg-white p-8 rounded-lg shadow-lg">
                         <i data-lucide="quote" class="w-12 h-12 text-blue-200 mb-4"></i>
                         <p class="text-gray-600 mb-6">"I always struggled with speaking English fluently. The conversational club has been a game-changer. It's fun, relaxed, and I've made so many new friends."</p>
                         <div class="flex items-center">
-                            <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=1998&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/48x48/e2e8f0/475569?text=MP';" alt="Michael Pham">
+                            <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://i.pravatar.cc/48?u=michael" alt="Michael Pham">
                             <div>
                                 <p class="font-bold text-gray-900">Michael Pham</p>
                                 <p class="text-sm text-gray-500">Adult Student</p>
@@ -157,7 +142,6 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
         <section class="py-20 fade-in-section">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your Journey?</h2>
@@ -168,7 +152,6 @@
 
     </main>
     
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white">
         <div class="container mx-auto px-6 py-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
@@ -200,12 +183,10 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
     <a href="#" id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-opacity duration-300 opacity-0 pointer-events-none z-50">
         <i data-lucide="arrow-up" class="w-6 h-6"></i>
     </a>
 
-    <!-- Custom JavaScript -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Harmony & Words</title>
+    <meta name="description" content="Learn about the story and mission of Harmony & Words, a leading center for English and music education.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide-react@latest/dist/lucide-react.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header & Navigation -->
     <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="../index.html" class="text-2xl font-bold text-blue-600">Harmony & Words</a>
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="about.html" class="text-blue-600 font-semibold">About</a>
+            <div class="hidden md:flex items-center space-x-8 main-nav">
+                <a href="about.html" class="text-blue-600 font-semibold active">About</a>
                 <a href="courses.html" class="text-gray-600 hover:text-blue-600">Courses</a>
                 <a href="events.html" class="text-gray-600 hover:text-blue-600">Events</a>
                 <a href="fees.html" class="text-gray-600 hover:text-blue-600">Fees</a>
-                <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 shadow">Contact Us</a>
+                <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 shadow nav-button">Contact Us</a>
             </div>
             <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-600 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
         </nav>
@@ -37,7 +36,6 @@
     </header>
 
     <main>
-        <!-- About Us Section -->
         <section id="about" class="py-20">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Story</h2>
@@ -48,9 +46,39 @@
                 </div>
             </div>
         </section>
+        
+        <section class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                     <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
+                     <p class="max-w-2xl mx-auto text-gray-600">The passionate instructors and friendly staff dedicated to your success.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg object-cover" src="https://i.pravatar.cc/150?u=alex" alt="Alex Johnson">
+                        <h4 class="text-xl font-bold">Alex Johnson</h4>
+                        <p class="text-blue-600">Lead Music Instructor</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg object-cover" src="https://i.pravatar.cc/150?u=maria" alt="Maria Garcia">
+                        <h4 class="text-xl font-bold">Maria Garcia</h4>
+                        <p class="text-blue-600">Head of English Dept.</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg object-cover" src="https://i.pravatar.cc/150?u=david" alt="David Chen">
+                        <h4 class="text-xl font-bold">David Chen</h4>
+                        <p class="text-blue-600">Guitar & Vocal Coach</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg object-cover" src="https://i.pravatar.cc/150?u=sarah" alt="Sarah Minh">
+                        <h4 class="text-xl font-bold">Sarah Minh</h4>
+                        <p class="text-blue-600">Center Coordinator</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white">
         <div class="container mx-auto px-6 py-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
