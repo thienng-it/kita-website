@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Harmony & Words</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide-react@latest/dist/lucide-react.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-blue-600">Harmony & Words</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="courses.html" class="text-gray-600 hover:text-blue-600">Courses</a>
+                <a href="events.html" class="text-gray-600 hover:text-blue-600">Events</a>
+                <a href="fees.html" class="text-gray-600 hover:text-blue-600">Fees</a>
+                <a href="contact.html" class="text-blue-600 font-semibold">Contact Us</a>
+            </div>
+            <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-600 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="courses.html" class="block py-2 text-gray-600 hover:text-blue-600">Courses</a>
+            <a href="events.html" class="block py-2 text-gray-600 hover:text-blue-600">Events</a>
+            <a href="fees.html" class="block py-2 text-gray-600 hover:text-blue-600">Fees</a>
+            <a href="contact.html" class="block py-2 text-blue-600 font-semibold">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                    <p class="max-w-2xl mx-auto text-gray-600">We're here to help and answer any question you might have. We look forward to hearing from you.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-2 bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                        <form id="contact-form">
+                            <div id="form-notification" class="hidden p-4 mb-4 text-sm rounded-lg" role="alert"></div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Full Name</label>
+                                    <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="John Doe" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email Address</label>
+                                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="you@example.com" required>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
+                                <input type="text" id="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Inquiry about Piano Lessons" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your Message</label>
+                                <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="I would like to know more about..."></textarea>
+                            </div>
+                            <button type="submit" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-3 text-center">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info & Hours -->
+                    <div class="space-y-8">
+                        <div class="bg-white p-8 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                            <div class="space-y-4 text-gray-600">
+                                <div class="flex items-start gap-4"><i data-lucide="map-pin" class="w-6 h-6 text-blue-600 mt-1 flex-shrink-0"></i><span>123 Music Lane, Harmony City, Ho Chi Minh City, Vietnam</span></div>
+                                <div class="flex items-center gap-4"><i data-lucide="phone" class="w-6 h-6 text-blue-600 flex-shrink-0"></i><span>(123) 456-7890</span></div>
+                                <div class="flex items-center gap-4"><i data-lucide="mail" class="w-6 h-6 text-blue-600 flex-shrink-0"></i><span>contact@harmonywords.com</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-4">Business Hours</h3>
+                            <ul id="business-hours" class="space-y-2 text-gray-600">
+                                <li data-day="1" class="flex justify-between"><span>Monday</span><span>9:00 AM - 8:00 PM</span></li>
+                                <li data-day="2" class="flex justify-between"><span>Tuesday</span><span>9:00 AM - 8:00 PM</span></li>
+                                <li data-day="3" class="flex justify-between"><span>Wednesday</span><span>9:00 AM - 8:00 PM</span></li>
+                                <li data-day="4" class="flex justify-between"><span>Thursday</span><span>9:00 AM - 8:00 PM</span></li>
+                                <li data-day="5" class="flex justify-between"><span>Friday</span><span>9:00 AM - 8:00 PM</span></li>
+                                <li data-day="6" class="flex justify-between"><span>Saturday</span><span>10:00 AM - 6:00 PM</span></li>
+                                <li data-day="0" class="flex justify-between"><span>Sunday</span><span>Closed</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Meet the Team Section -->
+        <section class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                     <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
+                     <p class="max-w-2xl mx-auto text-gray-600">The passionate instructors and friendly staff dedicated to your success.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="text-center">
+                        <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg object-cover" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=1974&auto=format&fit=crop" alt="Team Member 1">
+                        <h4 class="text-xl font-bold">Alex Johnson</h4>
+                        <p class="text-blue-600">Lead Music Instructor</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="text-center">
+                        <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="Team Member 2">
+                        <h4 class="text-xl font-bold">Maria Garcia</h4>
+                        <p class="text-blue-600">Head of English Dept.</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="text-center">
+                        <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="Team Member 3">
+                        <h4 class="text-xl font-bold">David Chen</h4>
+                        <p class="text-blue-600">Guitar & Vocal Coach</p>
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="text-center">
+                        <img class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg object-cover" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop" alt="Team Member 4">
+                        <h4 class="text-xl font-bold">Sarah Minh</h4>
+                        <p class="text-blue-600">Center Coordinator</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="py-20">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                     <h2 class="text-3xl md:text-4xl font-bold mb-4">Find Us Here</h2>
+                </div>
+                <div class="rounded-lg shadow-xl overflow-hidden h-96">
+                     <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.447188339398!2d106.62966381533264!3d10.77701489232079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529b3a5a4a491%3A0xf63af89d6e3646e!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2sus!4v1663109295329!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Harmony & Words</h3>
+                    <p class="text-gray-400">Nurturing talent in English and Music.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="courses.html" class="text-gray-400 hover:text-white">Courses</a></li>
+                        <li><a href="fees.html" class="text-gray-400 hover:text-white">Fees</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="youtube" class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 Harmony & Words. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- Highlight current day in business hours ---
+            const today = new Date().getDay(); // Sunday = 0, Monday = 1, etc.
+            const hoursList = document.getElementById('business-hours');
+            if (hoursList) {
+                const todayLi = hoursList.querySelector(`li[data-day="${today}"]`);
+                if (todayLi) {
+                    todayLi.classList.add('text-blue-600', 'font-bold');
+                }
+            }
+
+            // --- Contact Form Submission ---
+            const contactForm = document.getElementById('contact-form');
+            const formNotification = document.getElementById('form-notification');
+
+            if(contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Simulate a form submission
+                    formNotification.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
+                    formNotification.classList.add('bg-yellow-100', 'text-yellow-700');
+                    formNotification.textContent = 'Sending...';
+                    formNotification.classList.remove('hidden');
+
+
+                    setTimeout(() => {
+                        // This is a mock success. In a real application, you would use fetch() to send data to a server.
+                        const isSuccess = Math.random() > 0.2; // 80% chance of success for demo
+
+                        if (isSuccess) {
+                            formNotification.classList.remove('bg-yellow-100', 'text-yellow-700');
+                            formNotification.classList.add('bg-green-100', 'text-green-700');
+                            formNotification.textContent = 'Thank you! Your message has been sent successfully.';
+                            contactForm.reset();
+                        } else {
+                            formNotification.classList.remove('bg-yellow-100', 'text-yellow-700');
+                            formNotification.classList.add('bg-red-100', 'text-red-700');
+                            formNotification.textContent = 'Sorry, there was an error sending your message. Please try again later.';
+                        }
+                    }, 1500); // Simulate network delay
+                });
+            }
+            
+            // Re-initialize Lucide icons after DOM content is loaded
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

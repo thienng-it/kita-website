@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees & Pricing | Harmony & Words</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide-react@latest/dist/lucide-react.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-blue-600">Harmony & Words</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="courses.html" class="text-gray-600 hover:text-blue-600">Courses</a>
+                <a href="events.html" class="text-gray-600 hover:text-blue-600">Events</a>
+                <a href="fees.html" class="text-blue-600 font-semibold">Fees</a>
+                <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 shadow">Contact Us</a>
+            </div>
+            <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-600 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="courses.html" class="block py-2 text-gray-600 hover:text-blue-600">Courses</a>
+            <a href="events.html" class="block py-2 text-gray-600 hover:text-blue-600">Events</a>
+            <a href="fees.html" class="block py-2 text-blue-600 font-semibold">Fees</a>
+            <a href="contact.html" class="block mt-2 bg-blue-600 text-white text-center px-4 py-2 rounded-full hover:bg-blue-700 shadow">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Pricing Section -->
+        <section id="fees" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
+                    <p class="max-w-2xl mx-auto text-gray-600">Choose the plan that's right for you. All plans are billed monthly.</p>
+                </div>
+
+                <!-- Pricing Cards -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <!-- English Courses -->
+                    <div class="space-y-8">
+                        <h3 class="text-2xl font-bold text-center">English Courses</h3>
+                        <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-blue-500">
+                            <h4 class="text-xl font-bold mb-2">General English</h4>
+                            <p class="text-4xl font-bold mb-4">$150<span class="text-lg font-normal text-gray-500">/month</span></p>
+                            <ul class="space-y-3 text-gray-600 mb-6">
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>8 group sessions per month</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>All learning materials included</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Access to online resources</li>
+                            </ul>
+                            <a href="#" class="w-full text-center bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">Enroll Now</a>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-blue-500">
+                            <h4 class="text-xl font-bold mb-2">IELTS Preparation</h4>
+                            <p class="text-4xl font-bold mb-4">$250<span class="text-lg font-normal text-gray-500">/month</span></p>
+                            <ul class="space-y-3 text-gray-600 mb-6">
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>12 focused prep sessions</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Mock tests & expert feedback</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Proven score-boosting strategies</li>
+                            </ul>
+                            <a href="#" class="w-full text-center bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">Enroll Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Music Lessons -->
+                    <div class="space-y-8">
+                         <h3 class="text-2xl font-bold text-center">Music Lessons</h3>
+                        <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-green-500">
+                            <h4 class="text-xl font-bold mb-2">Piano / Vocal (Private)</h4>
+                            <p class="text-4xl font-bold mb-4">$200<span class="text-lg font-normal text-gray-500">/month</span></p>
+                            <ul class="space-y-3 text-gray-600 mb-6">
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>4 private 1-on-1 sessions</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Personalized lesson plans</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Recital opportunities</li>
+                            </ul>
+                            <a href="#" class="w-full text-center bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition">Book a Trial</a>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-green-500">
+                            <h4 class="text-xl font-bold mb-2">Guitar (Group)</h4>
+                            <p class="text-4xl font-bold mb-4">$120<span class="text-lg font-normal text-gray-500">/month</span></p>
+                            <ul class="space-y-3 text-gray-600 mb-6">
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>4 fun group sessions</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Learn with fellow enthusiasts</li>
+                                <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Covers chords, strumming & songs</li>
+                            </ul>
+                            <a href="#" class="w-full text-center bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition">Join a Group</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                </div>
+                <div class="space-y-4" id="faq-accordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-gray-50 rounded-lg">
+                        <button class="faq-toggle flex justify-between items-center w-full p-5 text-left font-semibold">
+                            What payment methods do you accept?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="p-5 pt-0 text-gray-600">We accept all major credit cards, bank transfers, and local payment methods like Momo or ZaloPay.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-gray-50 rounded-lg">
+                        <button class="faq-toggle flex justify-between items-center w-full p-5 text-left font-semibold">
+                            Can I book a trial lesson?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="p-5 pt-0 text-gray-600">Yes! We offer a discounted trial lesson for all our private music courses. It's a great way to meet your instructor and see if it's a good fit. Please contact us to schedule one.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-gray-50 rounded-lg">
+                        <button class="faq-toggle flex justify-between items-center w-full p-5 text-left font-semibold">
+                            Is there a discount for enrolling in multiple courses?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="p-5 pt-0 text-gray-600">Absolutely! We offer a 15% discount on the second course if you or a family member enroll in more than one program. Contact our front desk for more details on our family and bundle packages.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <!-- Footer content remains the same -->
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // FAQ Accordion Logic
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.style.transform = 'rotate(180deg)';
+                } 
+            });
+        });
+    </script>
+</body>
+</html>

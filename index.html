@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony & Words | English & Music Center</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide-react@latest/dist/lucide-react.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="header-default sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">
+                Harmony & Words
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="pages/about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                <a href="pages/courses.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Courses</a>
+                <a href="pages/events.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Events</a>
+                <a href="pages/fees.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Fees</a>
+                <a href="pages/contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow">Contact Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="pages/about.html" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="pages/courses.html" class="block py-2 text-gray-600 hover:text-blue-600">Courses</a>
+            <a href="pages/events.html" class="block py-2 text-gray-600 hover:text-blue-600">Events</a>
+            <a href="pages/fees.html" class="block py-2 text-gray-600 hover:text-blue-600">Fees</a>
+            <a href="pages/contact.html" class="block mt-2 bg-blue-600 text-white text-center px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-white">
+            <div class="container mx-auto px-6 py-20 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                        Unlock Your Voice.
+                        <span class="text-blue-600">Find Your Rhythm.</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 mb-8">
+                        At Harmony & Words, we provide a vibrant, supportive space for students of all ages to master the worlds of English and music.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="pages/courses.html" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg">Explore Courses</a>
+                        <a href="pages/about.html" class="bg-gray-200 text-gray-800 font-semibold px-8 py-3 rounded-full hover:bg-gray-300 transition duration-300">Learn More</a>
+                    </div>
+                </div>
+                <div class="relative hidden lg:block">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e2e8f0/475569?text=Music+%26+Learning';" class="rounded-2xl shadow-2xl" alt="Person playing guitar">
+                    <div class="absolute -bottom-8 -left-8 bg-blue-100 p-6 rounded-2xl shadow-lg w-64">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
+                                <i data-lucide="award" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-900">10+ Years</p>
+                                <p class="text-sm text-gray-600">of Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Harmony & Words?</h2>
+                    <p class="max-w-2xl mx-auto text-gray-600">We offer more than just lessons; we offer a path to confidence and creativity.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="users" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Expert Instructors</h3>
+                        <p class="text-gray-600">Learn from passionate, experienced teachers dedicated to your personal growth.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-green-100 text-green-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="sparkles" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Vibrant Community</h3>
+                        <p class="text-gray-600">Join a supportive network of fellow learners, parents, and staff.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="text-center p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-purple-100 text-purple-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="calendar-check" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Flexible Learning</h3>
+                        <p class="text-gray-600">Choose from group classes, private lessons, and online options to fit your schedule.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-blue-50 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Students Say</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <i data-lucide="quote" class="w-12 h-12 text-blue-200 mb-4"></i>
+                        <p class="text-gray-600 mb-6">"The teachers here are incredibly patient and motivating. My daughter's confidence in both English and piano has soared since she joined. We couldn't be happier!"</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/48x48/e2e8f0/475569?text=JS';" alt="Jane Smith">
+                            <div>
+                                <p class="font-bold text-gray-900">Jane Smith</p>
+                                <p class="text-sm text-gray-500">Parent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <i data-lucide="quote" class="w-12 h-12 text-blue-200 mb-4"></i>
+                        <p class="text-gray-600 mb-6">"I always struggled with speaking English fluently. The conversational club has been a game-changer. It's fun, relaxed, and I've made so many new friends."</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=1998&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/48x48/e2e8f0/475569?text=MP';" alt="Michael Pham">
+                            <div>
+                                <p class="font-bold text-gray-900">Michael Pham</p>
+                                <p class="text-sm text-gray-500">Adult Student</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your Journey?</h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mb-8">Enroll today or contact us for a free consultation. Let's unlock your potential together.</p>
+                <a href="pages/contact.html" class="bg-blue-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg text-lg">Contact Us Now</a>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Harmony & Words</h3>
+                    <p class="text-gray-400">Nurturing talent in English and Music.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="pages/about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="pages/courses.html" class="text-gray-400 hover:text-white">Courses</a></li>
+                        <li><a href="pages/fees.html" class="text-gray-400 hover:text-white">Fees</a></li>
+                        <li><a href="pages/contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="youtube" class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 Harmony & Words. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-opacity duration-300 opacity-0 pointer-events-none z-50">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </a>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

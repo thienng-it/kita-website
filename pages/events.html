@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Harmony & Words</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide-react@latest/dist/lucide-react.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-blue-600">Harmony & Words</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="courses.html" class="text-gray-600 hover:text-blue-600">Courses</a>
+                <a href="events.html" class="text-blue-600 font-semibold">Events</a>
+                <a href="fees.html" class="text-gray-600 hover:text-blue-600">Fees</a>
+                <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 shadow">Contact Us</a>
+            </div>
+            <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-600 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="courses.html" class="block py-2 text-gray-600 hover:text-blue-600">Courses</a>
+            <a href="events.html" class="block py-2 text-blue-600 font-semibold">Events</a>
+            <a href="fees.html" class="block py-2 text-gray-600 hover:text-blue-600">Fees</a>
+            <a href="contact.html" class="block mt-2 bg-blue-600 text-white text-center px-4 py-2 rounded-full hover:bg-blue-700 shadow">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Featured Event Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Events</h2>
+                    <p class="max-w-2xl mx-auto text-gray-600">Join our vibrant community. From concerts to workshops, there's always something happening.</p>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg shadow-xl overflow-hidden md:flex items-center">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop" alt="Concert" class="h-64 md:h-full w-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <p class="text-blue-600 font-semibold mb-2">Featured Event</p>
+                        <h3 class="text-3xl font-bold mb-4">Annual Student Showcase</h3>
+                        <p class="text-gray-600 mb-6">Experience an unforgettable evening of music and talent as our students take the stage. A perfect night for family and friends!</p>
+                        <div id="countdown" class="flex text-center gap-4 mb-6">
+                            <div><div id="days" class="text-3xl font-bold bg-white p-3 rounded-lg shadow-md">00</div><span class="text-xs text-gray-500">Days</span></div>
+                            <div><div id="hours" class="text-3xl font-bold bg-white p-3 rounded-lg shadow-md">00</div><span class="text-xs text-gray-500">Hours</span></div>
+                            <div><div id="minutes" class="text-3xl font-bold bg-white p-3 rounded-lg shadow-md">00</div><span class="text-xs text-gray-500">Minutes</span></div>
+                            <div><div id="seconds" class="text-3xl font-bold bg-white p-3 rounded-lg shadow-md">00</div><span class="text-xs text-gray-500">Seconds</span></div>
+                        </div>
+                        <a href="#" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg inline-block">Book Your Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events List -->
+        <section id="events" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Upcoming Events</h2>
+                </div>
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <!-- Event Item 1 -->
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center gap-6">
+                        <div class="bg-red-500 text-white text-center rounded-lg p-4 w-full md:w-32"><p class="text-5xl font-bold">25</p><p class="font-semibold">AUG</p></div>
+                        <div class="flex-1 text-center md:text-left"><h3 class="text-xl font-bold text-blue-600">Student Summer Concert</h3><p class="text-gray-600 mt-1">Our talented music students showcase their progress in our annual summer performance.</p></div>
+                        <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow">Learn More</a>
+                    </div>
+                    <!-- Event Item 2 -->
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center gap-6">
+                        <div class="bg-purple-500 text-white text-center rounded-lg p-4 w-full md:w-32"><p class="text-5xl font-bold">10</p><p class="font-semibold">SEP</p></div>
+                        <div class="flex-1 text-center md:text-left"><h3 class="text-xl font-bold text-blue-600">Free English Workshop: Idioms</h3><p class="text-gray-600 mt-1">A fun and interactive workshop to learn common English idioms and expressions.</p></div>
+                        <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Events Gallery -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">From Our Gallery</h2>
+                    <p class="max-w-2xl mx-auto text-gray-600">A glimpse into the memorable moments we've shared.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md" src="https://images.unsplash.com/photo-1524230659-c342a0135741?q=80&w=2070&auto=format&fit=crop" alt=""></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md" src="https://images.unsplash.com/photo-1519412666095-9ce174211a78?q=80&w=1964&auto=format&fit=crop" alt=""></div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md" src="https://images.unsplash.com/photo-1558022449-8a2133853c3e?q=80&w=1964&auto=format&fit=crop" alt=""></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md" src="https://images.unsplash.com/photo-1510915361894-db8b60106945?q=80&w=2070&auto=format&fit=crop" alt=""></div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md" src="https://images.unsplash.com/photo-1588492395213-4a04a4552979?q=80&w=1974&auto=format&fit=crop" alt=""></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md" src="https://images.unsplash.com/photo-1518701006-387254921638?q=80&w=2070&auto=format&fit=crop" alt=""></div>
+                    </div>
+                     <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md" src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070&auto=format&fit=crop" alt=""></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <!-- Footer content remains the same -->
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Countdown Timer Logic
+        const countdownDate = new Date("Sep 30, 2025 19:00:00").getTime();
+
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = String(days).padStart(2, '0');
+            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+            document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "<div class='text-xl font-bold text-red-500'>This Event Has Passed</div>";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

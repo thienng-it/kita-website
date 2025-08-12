@@ -1,0 +1,101 @@
+/* ==============================================
+STYLE.CSS (UPDATED)
+- Uses CSS variables for easy theming.
+- Adds modern styles for the navigation bar.
+- Refines sticky header transition.
+==============================================
+*/
+
+:root {
+    --primary-color: #3b82f6; /* blue-500 */
+    --primary-hover: #2563eb; /* blue-600 */
+    --secondary-color: #16a34a; /* green-500 */
+    --secondary-hover: #15803d; /* green-600 */
+    --text-dark: #1f2937;      /* gray-800 */
+    --text-light: #4b5563;     /* gray-600 */
+    --bg-light: #f9fafb;       /* gray-50 */
+    --bg-white: #ffffff;
+    --header-height: 80px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* --- Modern Navigation Bar Styles --- */
+.main-nav a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Underline effect for hover on non-button links */
+.main-nav a:not(.nav-button):after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    transition: width 0.3s ease-in-out;
+}
+
+.main-nav a:not(.nav-button):hover:after {
+    width: 60%;
+}
+
+/* Style for the active page link */
+.main-nav a.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Contact Us button hover effect */
+.nav-button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.2), 0 4px 6px -2px rgba(59, 130, 246, 0.1);
+}
+
+
+/* Header Styling & Sticky Effect */
+header {
+    transition: all 0.3s ease-in-out;
+}
+
+.header-scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* General Animations */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Back to Top Button */
+#back-to-top {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(20px);
+}
+#back-to-top.opacity-100 {
+    transform: translateY(0);
+}
+
+/* FAQ Accordion */
+.faq-toggle i {
+    transition: transform 0.3s ease-in-out;
+}
